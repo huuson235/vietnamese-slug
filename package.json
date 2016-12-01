@@ -1,6 +1,6 @@
 {
   "name": "vietnamese-slug",
-  "version": "1.0.2",
+  "version": "1.1.4",
   "description": "Remove mark in Vietnamese words",
   "main": "index.js",
   "scripts": {
@@ -13,5 +13,9 @@
     "mark"
   ],
   "author": "Hoang Son <huuhoangson235@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huuson235/vietnamese-slug.git"
+  }
 }
