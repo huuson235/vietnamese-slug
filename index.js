@@ -1,4 +1,4 @@
-module.exports = function (str, operator) { 
+module.exports = function (str, separator) { 
   str = str
     .toLowerCase()
     .replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a")
@@ -11,8 +11,8 @@ module.exports = function (str, operator) {
     .replace(/\s+/g, "-")
     .replace(/[^A-Za-z0-9_-]/g, "")
     .replace(/-+/g, "-");
-  if (operator) {
-    return str.replace(/-/g, operator);
+  if (separator) {
+    return str.replace(/-/g, separator);
   }
   return str;
 }
